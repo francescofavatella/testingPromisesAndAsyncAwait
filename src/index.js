@@ -32,7 +32,8 @@ const promiseKO = async (message, msec) => {
 
   console.log("After message 'francesco' I will write 'bye' in 3 seconds");
   promiseOK("bye", 3000);
-  /*
+})();
+/*
 Waiting message 'Hi' in 2 seconds
 Awaiting message 'francesco' in 1 seconds and then continue to write
 francesco
@@ -40,9 +41,7 @@ After message 'francesco' I will write 'bye' in 3 seconds
 Hi
 bye
 */
-  //promiseKO("ciao", 1000);
-})();
-
+//promiseKO("ciao", 1000);
 function App() {
   return (
     <div className="App">
