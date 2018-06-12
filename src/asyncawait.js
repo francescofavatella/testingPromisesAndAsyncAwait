@@ -1,6 +1,6 @@
 import { promiseOK } from "./promise";
 
-const nonBlockingAsyncAwait = async () => {
+export const nonBlockingAsyncAwait = async () => {
   const testName = "nonBlockingAsyncAwait - ";
   console.log(testName + "Awaiting message 'Hi' in 2 seconds");
   promiseOK(testName + "Hi", 2000);
@@ -10,6 +10,7 @@ const nonBlockingAsyncAwait = async () => {
 };
 
 /*
+--- Expected Output ---
 nonBlockingAsyncAwait - Awaiting message 'Hi' in 2 seconds
 nonBlockingAsyncAwait - Awaiting message 'francesco' in 1 seconds
 francesco
@@ -17,7 +18,7 @@ Hi
 */
 //nonBlockingAsyncAwait();
 
-const blockingAsyncAwait = async () => {
+export const blockingAsyncAwait = async () => {
   const testName = "blockingAsyncAwait - ";
 
   console.log(testName + "Awaiting message 'Hi' in 2 seconds");
@@ -28,6 +29,7 @@ const blockingAsyncAwait = async () => {
 };
 
 /*
+--- Expected Output ---
 blockingAsyncAwait - Awaiting message 'Hi' in 2 seconds
 Hi
 blockingAsyncAwait - Awaiting message 'francesco' in 1 seconds

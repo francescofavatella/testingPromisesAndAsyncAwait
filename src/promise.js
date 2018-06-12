@@ -16,7 +16,7 @@ export const promiseKO = async (message, msec) => {
   });
 };
 
-const nestedPromises_test = async () => {
+export const nestedPromises = async () => {
   const testName = "nestedPromises - ";
   console.log(testName + "Awaiting message 'Hi' in 2 seconds");
   promiseOK(testName + "Hi", 2000).then(response => {
@@ -28,12 +28,12 @@ const nestedPromises_test = async () => {
 };
 
 /*
+--- Expected Output ---
 nestedPromises - Awaiting message 'Hi' in 2 seconds
 nestedPromises - Hi
 nestedPromises - Awaiting message 'francesco' in 1 seconds
 nestedPromises - francesco
 Done
 */
-//nonBlockingAsyncAwait();
 
-export default nestedPromises_test;
+export default nestedPromises;
