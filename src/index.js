@@ -1,5 +1,5 @@
 import asyncAwait_TestAll from "./asyncawait";
-import nestedPromises_test from "./promise";
+import nestedPromises from "./promise";
 
-nestedPromises_test();
-// asyncAwait_TestAll();
+//asyncAwait_TestAll();
+nestedPromises();
