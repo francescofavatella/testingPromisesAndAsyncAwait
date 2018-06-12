@@ -1,2 +1,0 @@
-# testingPromisesAndAsyncAwait
-Created with CodeSandbox
