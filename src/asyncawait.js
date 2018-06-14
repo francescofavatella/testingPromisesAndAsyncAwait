@@ -63,8 +63,5 @@ const asyncAwait_TestAll = async () => {
   console.log("Done");
   return;
 };
-//Promise.all([nonBlockingAsyncAwait(), blockingAsyncAwait()]).then(response =>
-// console.log("Done")
-//);
 
 export default asyncAwait_TestAll;
